@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Confidential Declaration </title>
+   <style>
+     body {
+       background: linear-gradient(#fff0f6, #ffe3ed);
+       font-family: 'Segoe UI', sans-serif;
+       text-align: center;
+       padding-top: 70px;
+       overflow: hidden;
+      }
+      
+      .card { 
+        background: white;
+        max-width: 450px;
+        margin: auto;
+        padding: 34px;
+        border-radius: 22px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        position: relative;
+        z-index: 10;
+       }
+     
+       h1 {
+         color: #c9184a;
+         margin-bottom: 14px;
+       }
+
+       p {
+         color: #444;
+         font-size: 15px;
+         line-height: 1.7;
+       }
+
+       h2 {
+         color: #d6336c;
+         margin-top: 25px;
+       }
+
+       button {
+         font-size: 15px;
+         padding: 10px 26px;
+         border-radius: 25px;
+         border: none;
+         margin: 12px;
+         cursor: pointer;
+         z-index: 10;
+         position: relative;
+       }
+
+       #approve {
+         background-color: #ff4d6d;
+         color: white;
+       }
+
+       #reject {
+         background-color: #dee2e6;
+         position: absolute;
+       }
+
+       .footer {
+         font-size: 11px;
+         color: #888;
+         margin-top: 22px;
+       }
+
+      
+        </style>
+       </head>
+
+     <body>
+
+     <div class="card">
+       <h1> Confidential Declaration</h1>
+
+       <p>
+         To: <strong>CA Rishav Jain</strong><br><br>
+         After careful review and analysis, the following allocation has been recorded:
+       </p>
+
+       <p>
+         Asset: 💖 My Heart <br>
+         Allocation: 100% fully invested in you<br>
+         Valuation: Long term, non-depriciable
+       </p>
+
+       <p>
+         No provisional entries, no assumptions - this position is deliberate and verified.
+       </p>
+
+       <h2>Do you approve this allocation?</h2>
+       
+       <p><strong>Will you be my valentine?❤</strong></p>
+
+       <button id= "approve"
+        onclick= "approved()">
+         Approve✔
+       </button>
+
+       <button id= "reject"
+        onmouseover="moveButton()">
+          Rejected Entry ❌
+       </button>
+
+       <div class="footer">
+         *This declaration is binding, irrevocable, and valid beyond all financial years.*
+       </div>
+     </div>
+
+     <script>
+  function approved() {
+    alert(
+      "Approved.\n\nAllocation accepted.\nROI: Unlimited care, laughter, and love 🤍"
+    );
+  }
+
+  function moveButton() {
+    let x = Math.random() * (window.innerWidth - 160);
+    let y = Math.random() * (window.innerHeight - 160);
+    document.getElementById("reject").style.left = x + "px";
+    document.getElementById("reject").style.top = y + "px";
+  }
+
+  
+</script>
+    </body>
+    </html>
